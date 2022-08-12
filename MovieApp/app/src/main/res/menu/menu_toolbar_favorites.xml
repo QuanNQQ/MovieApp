@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <item
+        android:id="@+id/search_view"
+        android:icon="@drawable/ic_baseline_search_24"
+        android:title="title"
+        app:showAsAction="always"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        />
+    <item
+        android:id="@+id/favourite"
+        android:icon="@drawable/ic_baseline_grid_view_24"
+        android:title="Favourite"
+        />
+
+    <item
+        android:id="@+id/setting"
+        android:icon="@drawable/ic_baseline_grid_view_24"
+        android:title="Setting"
+        />
+
+    <item
+        android:id="@+id/about"
+        android:icon="@drawable/ic_baseline_grid_view_24"
+        android:title="About"
+        />
+
+
+
+</menu>

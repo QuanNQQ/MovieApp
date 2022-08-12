@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/fragmentMovies">
+
+    <fragment
+        android:id="@+id/fragmentMovies"
+        android:name="com.example.movieapp.fragments.FragmentMovies"
+        android:label="Movies"
+        tools:layout="@layout/fragment_movies"
+       >
+        <action
+            android:id="@+id/action_fragmentMovies_to_fragmentDetail"
+            app:destination="@id/fragmentDetail"
+            app:popUpToSaveState="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentAbouts"
+        android:name="com.example.movieapp.fragments.FragmentAbouts"
+        android:label="About"
+        tools:layout="@layout/fragment_abouts" />
+    <fragment
+        android:id="@+id/fragmentFavourites"
+        android:name="com.example.movieapp.fragments.FragmentFavourites"
+        android:label="Favorite"
+        tools:layout="@layout/fragment_favourites" />
+    <fragment
+        android:id="@+id/fragmentSettings"
+        android:name="com.example.movieapp.fragments.FragmentSettings"
+        android:label="Setting"
+        tools:layout="@layout/fragment_settings" />
+
+    <fragment
+        android:id="@+id/fragmentDetail"
+        android:name="com.example.movieapp.fragments.FragmentDetail"
+        android:label="fragment_detail"
+        tools:layout="@layout/fragment_detail" >
+        <argument
+            android:name="currentMovie"
+            app:argType="com.example.movieapp.model.Movie" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentReminder"
+        android:name="com.example.movieapp.fragments.FragmentReminder"
+        android:label="fragment_reminder"
+        tools:layout="@layout/fragment_reminder" />
+</navigation>
